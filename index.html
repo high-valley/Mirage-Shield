@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mirage Shield v0.8 | 適応型囮の実験</title>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mirage Shield v0.9 | 適応型囮の実験</title>
 <style>
 :root{color-scheme:dark;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}*{box-sizing:border-box}body{margin:0;background:#081321;color:#e7f1fb;padding:18px;line-height:1.65}main{max-width:780px;margin:auto}h1{font-size:1.8rem;margin:8px 0}h2{font-size:1.17rem;margin:0 0 12px}p{margin:8px 0 15px}.muted{color:#a4b8cc;font-size:.92rem}.card{padding:18px;margin:18px 0;border-radius:17px;border:1px solid #2a4257;background:#142336}.banner{border-left:4px solid #45d3b5}button,select{font:inherit;border:1px solid #567087;border-radius:10px;background:#243b50;color:white;padding:10px 14px}button{cursor:pointer}button.primary{background:#087a69;border-color:#27bca4;font-weight:bold}button:disabled{opacity:.45}button:focus-visible,select:focus-visible{outline:3px solid #64ebd0}.actions{display:flex;gap:8px;flex-wrap:wrap}label{display:block;margin:12px 0 5px}.track{height:8px;background:#31465a;border-radius:10px;overflow:hidden}.progress{height:100%;background:#2fceb1;width:0}.row{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.lane{border:1px solid #3a5269;border-radius:9px;padding:9px 3px;text-align:center;font-size:.8rem;background:#1e344a}.lane.active{border-color:#55ebc6;background:#10554b}.lane.target{box-shadow:inset 0 0 0 1px #d1a95d}.log{font-size:.9rem;background:#0e1d2c;border-radius:10px;padding:12px;margin-top:10px;min-height:70px;white-space:pre-line}.bar{background:#273b4f;height:14px;border-radius:8px;overflow:hidden;margin:5px 0 13px}.bar>div{height:100%;background:#30bfa7}.kv{display:flex;align-items:center;justify-content:space-between;gap:10px}.foot{color:#a9bed1;font-size:.82rem;padding:15px 0 32px}.green{color:#5be5bd}.warn{color:#efc27d}input{accent-color:#3bd2b3}small{color:#a9bed1}</style></head><body><main>
-<h1>🛡️ Mirage Shield</h1><p class="muted">研究デモ v0.8 — スマホ対応 / サーバー不要</p>
-<section class="card banner"><b>今回の進化</b><p>今回は守る入口の重要度を追加しました。重要な入口が狙われやすい模型では重要度優先型が改善します。ただし、攻撃先と重要度に関連がなければ優位性は保証されません。</p><small>架空の4つの入口を使った模型です。現実の攻撃を再現したものではありません。</small></section>
-<section class="card"><h2>① 防御が変わるところを見る</h2><label for="mode">防御方式</label><select id="mode"><option value="none">防御なし</option><option value="fixed">固定型（入口Aを守る）</option><option value="adaptive" selected>旧Mirage Shield（累積回数）</option><option value="recent">改良案1（直近の行動を重視）</option><option value="markov">改良案2（次の探索を予測）</option><option value="hybrid">改良案3（慎重な切り替え）</option><option value="risk">v0.8（重要度優先）</option><option value="riskadaptive">v0.8（重要度＋探索履歴）</option></select>
+<h1>🛡️ Mirage Shield</h1><p class="muted">研究デモ v0.9 — スマホ対応 / サーバー不要</p>
+<section class="card banner"><b>今回の進化</b><p>v0.9では囮が見せる架空情報の整合性を追加しました。別条件での試行では自動的に防御が強くなるわけではありません。同じ問い合わせに同じ内容を返せるかを確認します。</p><small>架空の4つの入口を使った模型です。現実の攻撃を再現したものではありません。</small></section>
+<section class="card"><h2>① 防御が変わるところを見る</h2><label for="mode">防御方式</label><select id="mode"><option value="none">防御なし</option><option value="fixed">固定型（入口Aを守る）</option><option value="adaptive" selected>旧Mirage Shield（累積回数）</option><option value="recent">改良案1（直近の行動を重視）</option><option value="markov">改良案2（次の探索を予測）</option><option value="hybrid">改良案3（慎重な切り替え）</option><option value="risk">v0.9（重要度優先）</option><option value="riskadaptive">v0.9（重要度＋探索履歴）</option></select>
 <label for="pattern">探索役の動き</label><select id="pattern"><option value="focused">集中型（同じ入口を繰り返し探す）</option><option value="shift">切り替え型（途中で探索先を変える）</option><option value="random">ランダム型</option></select>
 <div class="kv"><span id="counter">0 / 12 手</span><span id="protected" class="green">囮：入口A</span></div><div class="track"><div id="progress" class="progress"></div></div><div id="lanes" class="row" style="margin-top:12px"></div>
 <div id="log" class="log" aria-live="polite">「次の行動」でスタートします。</div><div class="actions" style="margin-top:12px"><button class="primary" id="next">次の行動</button><button id="complete">最後まで実行</button><button id="reset">やり直す</button></div>
@@ -12,7 +12,7 @@
 <section class="card"><h2>② 公平な比較実験</h2><p>8方式に<strong>同じ探索シナリオ</strong>を与えます。囮は1つだけ、実験ごとの探索回数も同じです。各方式で500回の模擬実験を行います。</p><label for="relation">重要度と攻撃先の関係</label><select id="relation"><option value="linked" selected>関連あり（重要な場所ほど狙われる）</option><option value="unlinked">関連なし（重要度と無関係）</option></select><label for="mix">探索パターン</label><select id="mix"><option value="focused">集中型</option><option value="shift" selected>切り替え型</option><option value="random">ランダム型</option><option value="mixed">3種類混合</option></select>
 <div class="actions"><button class="primary" id="run">500回を比較する</button><button id="repeat">別の乱数で再実験</button></div><div id="results" aria-live="polite"><p class="muted">ボタンで実験できます。</p></div></section>
 <section class="card"><h2>③ 今回分かったことの見方</h2><p><b>目標への到達率</b>が低いほど、模型の中では防御側が有利です。ただし、囮への誘導回数が増えても、それだけで安全性が向上したとはいえません。</p><p>今回の模型では、重要度と攻撃対象の関連があるとき重要度優先型が有利になる場合があります。<strong>先に結果を決めず、同じ条件で比較</strong>するための実験です。</p></section>
-<footer class="foot">重要：このサイトは静的な研究用シミュレーターです。外部サイトへの通信、実際の侵入、生成AIモデルによる探索は行いません。実運用の防御性能、研究上の新規性、誤検知率はまだ実証されていません。認証済み利用者を囮に移す設計は含みません。</footer>
+<section class="card"><h2>④ v0.9：架空情報の整合性テスト</h2><p>囮が返す架空のリソース情報を、<strong>同じセッションでは同じ内容に保つ</strong>実験です。データはすべて架空です。</p><label for="illusion">囮の情報管理方法</label><select id="illusion"><option value="consistent" selected>新方式：セッションごとに状態を保存</option><option value="unstable">比較対象：毎回情報を作り直す</option></select><div class="actions" style="margin:12px 0"><button class="primary" id="illusionNext">次の問い合わせ</button><button id="illusionAll">全8回を実行</button><button id="illusionReset">リセット</button></div><p id="illusionProgress" class="muted">0 / 8 回</p><div id="illusionLog" class="log" aria-live="polite">架空の情報を問い合わせます。</div><p id="illusionScore" class="muted"></p><small>整合性テストです。「矛盾0件」でも実際の侵入を防げるとは限りません。攻撃成功率とは別の品質指標です。</small></section><footer class="foot">重要：このサイトは静的な研究用シミュレーターです。外部サイトへの通信、実際の侵入、生成AIモデルによる探索は行いません。実運用の防御性能、研究上の新規性、誤検知率はまだ実証されていません。認証済み利用者を囮に移す設計は含みません。</footer>
 </main><script>
 "use strict";
 const $=id=>document.getElementById(id), letters=["A","B","C","D"];
@@ -24,6 +24,34 @@ let current=0, demo=null;
 function newDemo(){const p=$("pattern").value;const seed=p==="random"?20261025:20261024;const sc=scenario(random(seed),p,$("relation").value==="linked");demo=simulate($("mode").value,sc);demo.sc=sc;current=0;draw();}
 function draw(){const p=current?demo.progress[current-1]:null;$("counter").textContent=current+" / 12 手";$("progress").style.width=current/12*100+"%";$("protected").textContent=$("mode").value==="none"?"囮：なし":"囮：入口"+letters[p?p.decoy:0];$("lanes").innerHTML=letters.map((l,i)=>"<div class='lane "+(p&&p.entry===i?"active":"")+"'>入口"+l+"</div>").join("");$("log").textContent=!p?"「次の行動」でスタートします。":"探索役：入口"+letters[p.entry]+"を調査\\n防御： "+(p.trapped?"囮の仮想情報を提示":p.hit?"模擬標的に到達":"通常の応答")+"\\n探索回数： "+p.counts.join(" / ");$("next").disabled=current>=12;$("complete").disabled=current>=12;$("total").textContent=current===12?"この回の結果： "+(demo.success?"模擬標的に到達":"模擬標的に到達せず")+" ／ 囮への誘導 "+demo.lures+"回 ／ 囮変更 "+demo.changes+"回":"";}
 $("mode").onchange=newDemo;$("pattern").onchange=newDemo;$("relation").onchange=newDemo;$("next").onclick=()=>{current=Math.min(12,current+1);draw();};$("complete").onclick=()=>{current=12;draw();};$("reset").onclick=newDemo;
-let batch=0;function compare(){const rand=random(20261024+batch*7919),set=Array.from({length:500},()=>scenario(rand,$("mix").value,$("relation").value==="linked"));let html="<p class='muted'>実験番号 "+(batch+1)+" ・ 各500回 ・ 目標到達率（低いほど良い）</p>";for(const [mode,label] of [["none","防御なし"],["fixed","固定型"],["adaptive","旧Mirage Shield"],["recent","改良案1：直近重視"],["markov","改良案2：次の探索を予測"],["hybrid","改良案3：慎重な切り替え"],["risk","v0.8 重要度優先"],["riskadaptive","v0.8 重要度＋探索履歴"]]){const rs=set.map(s=>simulate(mode,s));const wins=rs.filter(r=>r.success).length,percent=wins/5;const lure=rs.reduce((a,r)=>a+r.lures,0)/500;html+="<div class='kv'><b>"+label+"</b><b>"+percent.toFixed(1)+"%</b></div><div class='bar'><div style='width:"+percent+"%'></div></div><small>目標到達 "+wins+"/500回 ／ 囮誘導 平均"+lure.toFixed(1)+"回</small>";}html+="<p class='muted'>到達率が0%でも実際の攻撃を防げるとは限りません。予測型が負ける結果もそのまま表示します。これらは簡略モデルであり、現実の安全性を示しません。</p>";$("results").innerHTML=html;}
+let batch=0;function compare(){const rand=random(20261024+batch*7919),set=Array.from({length:500},()=>scenario(rand,$("mix").value,$("relation").value==="linked"));let html="<p class='muted'>実験番号 "+(batch+1)+" ・ 各500回 ・ 目標到達率（低いほど良い）</p>";for(const [mode,label] of [["none","防御なし"],["fixed","固定型"],["adaptive","旧Mirage Shield"],["recent","改良案1：直近重視"],["markov","改良案2：次の探索を予測"],["hybrid","改良案3：慎重な切り替え"],["risk","v0.9 重要度優先"],["riskadaptive","v0.9 重要度＋探索履歴"]]){const rs=set.map(s=>simulate(mode,s));const wins=rs.filter(r=>r.success).length,percent=wins/5;const lure=rs.reduce((a,r)=>a+r.lures,0)/500;html+="<div class='kv'><b>"+label+"</b><b>"+percent.toFixed(1)+"%</b></div><div class='bar'><div style='width:"+percent+"%'></div></div><small>目標到達 "+wins+"/500回 ／ 囮誘導 平均"+lure.toFixed(1)+"回</small>";}html+="<p class='muted'>到達率が0%でも実際の攻撃を防げるとは限りません。予測型が負ける結果もそのまま表示します。これらは簡略モデルであり、現実の安全性を示しません。</p>";$("results").innerHTML=html;}
 $("run").onclick=()=>{batch=0;compare();};$("repeat").onclick=()=>{batch++;compare();};newDemo();
+
+const illusionQueries=["alpha","beta","alpha","gamma","beta","alpha","gamma","beta"];
+let illusionStep=0,illusionState={},illusionSeen={},illusionConflicts=0;
+function illusionValue(key,index){
+ if($("illusion").value==="consistent"){
+  if(!Object.prototype.hasOwnProperty.call(illusionState,key)){illusionState[key]="virtual-"+key+"-v1";}
+  return illusionState[key];
+ }
+ return "virtual-"+key+"-v"+(index+1);
+}
+function renderIllusion(message){
+ $("illusionProgress").textContent=illusionStep+" / 8 回";
+ $("illusionLog").textContent=message||"架空の情報を問い合わせます。";
+ $("illusionScore").textContent="同じ問い合わせへの矛盾："+illusionConflicts+"回";
+ $("illusionNext").disabled=illusionStep===8;$("illusionAll").disabled=illusionStep===8;
+}
+function illusionNext(){
+ if(illusionStep>=8)return;
+ const key=illusionQueries[illusionStep],value=illusionValue(key,illusionStep);
+ const prior=illusionSeen[key],conflict=prior!==undefined&&prior!==value;
+ if(conflict)illusionConflicts++;
+ illusionSeen[key]=value;
+ illusionStep++;
+ renderIllusion("問い合わせ："+key+"\n架空の応答："+value+"\n前回と矛盾："+(conflict?"はい":"いいえ"));
+}
+function illusionReset(){illusionStep=0;illusionState={};illusionSeen={};illusionConflicts=0;renderIllusion();}
+$("illusionNext").onclick=illusionNext;$("illusionAll").onclick=()=>{while(illusionStep<8)illusionNext();};
+$("illusionReset").onclick=illusionReset;$("illusion").onchange=illusionReset;illusionReset();
 </script></body></html>
