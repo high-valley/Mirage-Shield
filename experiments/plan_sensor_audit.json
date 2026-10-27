@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "purpose": "Stress the already frozen v2 defenders under imperfect observations; no algorithm tuning or selection on these results.",
+  "n": 10000,
+  "seed": 202610280000,
+  "error_rates": [0.0,0.1,0.3],
+  "conditions": ["uniform","importance_linked"],
+  "agents": ["random","learning","sweep","persistent","reverse","switching"],
+  "observation_model": "On nonterminal steps independently flip decoy to empty, or empty/hint to decoy, with probability error_rate. Explorer and defender receive the same observed response. True target reach always ends the episode. Error stream is separate from all v2 world/action streams.",
+  "pairing": "Same worlds, actions and sensor uniforms across error rates/policies within each condition/agent; independent seed namespaces between condition/agent pairs.",
+  "threshold": "Use selected threshold from results_v2/frozen.json without changes.",
+  "uncertainty": "Wilson rate CIs, paired normal difference CIs exploratory; simultaneous Hoeffding intervals for all row differences vs fixed_anchor, mean fixed_A/B/C/D and same-policy zero-error counterpart, family alpha=0.05.",
+  "limits": "Error rates are designed stresses, not measured real-world sensor error. No target mobility or false target success. Repeated evaluation conditions are known stresses, not a new tuning holdout."
+}

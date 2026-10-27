@@ -19,3 +19,4 @@ jobs:
       - run: python -m tests.fair_fixtures > /tmp/mirage-fair.json
       - run: node tests/browser_smoke.js
       - run: node tests/research_dashboard.js
+      - run: node tests/research_dashboard.js sensor-audit.html experiments/results_sensor/audit.json
