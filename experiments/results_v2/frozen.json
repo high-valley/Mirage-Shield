@@ -1,0 +1,2432 @@
+{
+  "selected_policy": "robust",
+  "threshold": 0.8,
+  "hashes": {
+    "engine_v2.py": "5bb3a90d5d16133317be6120047b9d61545c7a47d9991d5099a534cb9b38f41f",
+    "evaluate_v2.py": "3da563ee555d747d994d042e1fd7d2cb07c0112e48ee6b6162b8a81317a7a556",
+    "plan_v2.json": "c6d0e7437ecfb18e9788b3270b11981efe6c9369ee30214369838a04e447e3d9"
+  },
+  "trials": [
+    {
+      "threshold": 0.6,
+      "eligible": false,
+      "mean_reach": 0.61983125,
+      "cells": [
+        {
+          "condition": "uniform",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "random",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7650,
+          "reach_rate": 0.765,
+          "ci95": [
+            0.7565889888350196,
+            0.7732074920285218
+          ],
+          "delta_anchor": 0.0156,
+          "delta_anchor_ci95": [
+            0.013002889017095941,
+            0.01819711098290406
+          ],
+          "mean_moves": 0.1823,
+          "mean_decoys": 1.6995,
+          "mean_turns": 6.7841,
+          "cost_reach_plus_001_moves": 0.766823,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.771,
+              "delta_anchor": 0.0184
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.759,
+              "delta_anchor": 0.0128
+            }
+          ]
+        },
+        {
+          "condition": "uniform",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "learning",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 6597,
+          "reach_rate": 0.6597,
+          "ci95": [
+            0.6503537508852405,
+            0.6689236000351654
+          ],
+          "delta_anchor": -0.0956,
+          "delta_anchor_ci95": [
+            -0.10424786458110774,
+            -0.08695213541889227
+          ],
+          "mean_moves": 0.4272,
+          "mean_decoys": 1.1414,
+          "mean_turns": 7.601,
+          "cost_reach_plus_001_moves": 0.663972,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.6602,
+              "delta_anchor": -0.0996
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.6592,
+              "delta_anchor": -0.0916
+            }
+          ]
+        },
+        {
+          "condition": "uniform",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "sweep",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7029,
+          "reach_rate": 0.7029,
+          "ci95": [
+            0.6938668055634039,
+            0.7117773678977755
+          ],
+          "delta_anchor": -0.0534,
+          "delta_anchor_ci95": [
+            -0.057806803497177865,
+            -0.04899319650282214
+          ],
+          "mean_moves": 0.7553,
+          "mean_decoys": 1.9492,
+          "mean_turns": 6.4415,
+          "cost_reach_plus_001_moves": 0.710453,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7062,
+              "delta_anchor": -0.0546
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.6996,
+              "delta_anchor": -0.0522
+            }
+          ]
+        },
+        {
+          "condition": "uniform",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "persistent",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 1988,
+          "reach_rate": 0.1988,
+          "ci95": [
+            0.19109414608047792,
+            0.20673717453801765
+          ],
+          "delta_anchor": -0.5575,
+          "delta_anchor_ci95": [
+            -0.5672352897122448,
+            -0.5477647102877552
+          ],
+          "mean_moves": 2.177,
+          "mean_decoys": 10.5176,
+          "mean_turns": 13.0684,
+          "cost_reach_plus_001_moves": 0.22057000000000002,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.201,
+              "delta_anchor": -0.5598
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.1966,
+              "delta_anchor": -0.5552
+            }
+          ]
+        },
+        {
+          "condition": "physical_A_skew",
+          "config": {
+            "weights": [
+              5,
+              1,
+              1,
+              1
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": false,
+            "stream": "mt19937"
+          },
+          "agent": "random",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7542,
+          "reach_rate": 0.7542,
+          "ci95": [
+            0.7456646122930335,
+            0.7625401629353146
+          ],
+          "delta_anchor": 0.0166,
+          "delta_anchor_ci95": [
+            0.013889407886854988,
+            0.019310592113145012
+          ],
+          "mean_moves": 0.185,
+          "mean_decoys": 1.7292,
+          "mean_turns": 6.908,
+          "cost_reach_plus_001_moves": 0.75605,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7506,
+              "delta_anchor": 0.0162
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7578,
+              "delta_anchor": 0.017
+            }
+          ]
+        },
+        {
+          "condition": "physical_A_skew",
+          "config": {
+            "weights": [
+              5,
+              1,
+              1,
+              1
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": false,
+            "stream": "mt19937"
+          },
+          "agent": "learning",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 6458,
+          "reach_rate": 0.6458,
+          "ci95": [
+            0.6363717225979305,
+            0.6551163034771802
+          ],
+          "delta_anchor": -0.099,
+          "delta_anchor_ci95": [
+            -0.10776125784665035,
+            -0.09023874215334966
+          ],
+          "mean_moves": 0.4305,
+          "mean_decoys": 1.1626,
+          "mean_turns": 7.8171,
+          "cost_reach_plus_001_moves": 0.650105,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.643,
+              "delta_anchor": -0.099
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.6486,
+              "delta_anchor": -0.099
+            }
+          ]
+        },
+        {
+          "condition": "physical_A_skew",
+          "config": {
+            "weights": [
+              5,
+              1,
+              1,
+              1
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": false,
+            "stream": "mt19937"
+          },
+          "agent": "sweep",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 6877,
+          "reach_rate": 0.6877,
+          "ci95": [
+            0.6785462920591441,
+            0.696709554952504
+          ],
+          "delta_anchor": -0.0576,
+          "delta_anchor_ci95": [
+            -0.062166660092884504,
+            -0.05303333990711549
+          ],
+          "mean_moves": 0.8071,
+          "mean_decoys": 2.0315,
+          "mean_turns": 6.6509,
+          "cost_reach_plus_001_moves": 0.695771,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.6898,
+              "delta_anchor": -0.0524
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.6856,
+              "delta_anchor": -0.0628
+            }
+          ]
+        },
+        {
+          "condition": "physical_A_skew",
+          "config": {
+            "weights": [
+              5,
+              1,
+              1,
+              1
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": false,
+            "stream": "mt19937"
+          },
+          "agent": "persistent",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 1911,
+          "reach_rate": 0.1911,
+          "ci95": [
+            0.1835132396553607,
+            0.19892399453804327
+          ],
+          "delta_anchor": -0.5542,
+          "delta_anchor_ci95": [
+            -0.5639425602362186,
+            -0.5444574397637815
+          ],
+          "mean_moves": 2.1946,
+          "mean_decoys": 10.5996,
+          "mean_turns": 13.1815,
+          "cost_reach_plus_001_moves": 0.21304599999999999,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.1924,
+              "delta_anchor": -0.5498
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.1898,
+              "delta_anchor": -0.5586
+            }
+          ]
+        },
+        {
+          "condition": "slow_learning",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.6,
+            "epsilon": 0.35,
+            "learning_rate": 0.2,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "random",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7562,
+          "reach_rate": 0.7562,
+          "ci95": [
+            0.7476870954267805,
+            0.7645161438080847
+          ],
+          "delta_anchor": 0.0068,
+          "delta_anchor_ci95": [
+            0.004966136002223672,
+            0.008633863997776327
+          ],
+          "mean_moves": 0.0957,
+          "mean_decoys": 1.7112,
+          "mean_turns": 6.847,
+          "cost_reach_plus_001_moves": 0.757157,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.761,
+              "delta_anchor": 0.0084
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7514,
+              "delta_anchor": 0.0052
+            }
+          ]
+        },
+        {
+          "condition": "slow_learning",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.6,
+            "epsilon": 0.35,
+            "learning_rate": 0.2,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "learning",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 6635,
+          "reach_rate": 0.6635,
+          "ci95": [
+            0.6541777133627912,
+            0.6726967191699974
+          ],
+          "delta_anchor": -0.0158,
+          "delta_anchor_ci95": [
+            -0.02165236436800335,
+            -0.009947635631996651
+          ],
+          "mean_moves": 0.3203,
+          "mean_decoys": 1.0597,
+          "mean_turns": 8.2435,
+          "cost_reach_plus_001_moves": 0.6667029999999999,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.6616,
+              "delta_anchor": -0.0218
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.6654,
+              "delta_anchor": -0.0098
+            }
+          ]
+        },
+        {
+          "condition": "slow_learning",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.6,
+            "epsilon": 0.35,
+            "learning_rate": 0.2,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "sweep",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 6277,
+          "reach_rate": 0.6277,
+          "ci95": [
+            0.6181778422504763,
+            0.6371240845656528
+          ],
+          "delta_anchor": -0.1286,
+          "delta_anchor_ci95": [
+            -0.13516143859606586,
+            -0.12203856140393413
+          ],
+          "mean_moves": 1.7647,
+          "mean_decoys": 2.7516,
+          "mean_turns": 7.3439,
+          "cost_reach_plus_001_moves": 0.645347,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.6296,
+              "delta_anchor": -0.1312
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.6258,
+              "delta_anchor": -0.126
+            }
+          ]
+        },
+        {
+          "condition": "slow_learning",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.6,
+            "epsilon": 0.35,
+            "learning_rate": 0.2,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "persistent",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 2474,
+          "reach_rate": 0.2474,
+          "ci95": [
+            0.23904079852290727,
+            0.25595319745395856
+          ],
+          "delta_anchor": -0.5089,
+          "delta_anchor_ci95": [
+            -0.5186987572623483,
+            -0.4991012427376517
+          ],
+          "mean_moves": 1.8805,
+          "mean_decoys": 9.5312,
+          "mean_turns": 12.5338,
+          "cost_reach_plus_001_moves": 0.266205,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.2472,
+              "delta_anchor": -0.5136
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.2476,
+              "delta_anchor": -0.5042
+            }
+          ]
+        },
+        {
+          "condition": "latency_one",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 1,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "random",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7494,
+          "reach_rate": 0.7494,
+          "ci95": [
+            0.7408116500730247,
+            0.7577968115396817
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 1.723,
+          "mean_turns": 6.8976,
+          "cost_reach_plus_001_moves": 0.7494,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7526,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7462,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "latency_one",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 1,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "learning",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7553,
+          "reach_rate": 0.7553,
+          "ci95": [
+            0.7467769475231529,
+            0.7636269829087796
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 0.7768,
+          "mean_turns": 6.3935,
+          "cost_reach_plus_001_moves": 0.7553,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7598,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7508,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "latency_one",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 1,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "sweep",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7563,
+          "reach_rate": 0.7563,
+          "ci95": [
+            0.7477882260607257,
+            0.7646149363744653
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 1.3574,
+          "mean_turns": 5.8007,
+          "cost_reach_plus_001_moves": 0.7563,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7608,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7518,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "latency_one",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 1,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "persistent",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7563,
+          "reach_rate": 0.7563,
+          "ci95": [
+            0.7477882260607257,
+            0.7646149363744653
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 2.5052,
+          "mean_turns": 9.2363,
+          "cost_reach_plus_001_moves": 0.7563,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7608,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7518,
+              "delta_anchor": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "threshold": 0.8,
+      "eligible": true,
+      "mean_reach": 0.6388625,
+      "cells": [
+        {
+          "condition": "uniform",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "random",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7516,
+          "reach_rate": 0.7516,
+          "ci95": [
+            0.7430357507418971,
+            0.7599710212779786
+          ],
+          "delta_anchor": 0.0022,
+          "delta_anchor_ci95": [
+            0.0012014912472671135,
+            0.0031985087527328865
+          ],
+          "mean_moves": 0.0277,
+          "mean_decoys": 1.7187,
+          "mean_turns": 6.8834,
+          "cost_reach_plus_001_moves": 0.751877,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7562,
+              "delta_anchor": 0.0036
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.747,
+              "delta_anchor": 0.0008
+            }
+          ]
+        },
+        {
+          "condition": "uniform",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "learning",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7056,
+          "reach_rate": 0.7056,
+          "ci95": [
+            0.6965894379631424,
+            0.7144526619068353
+          ],
+          "delta_anchor": -0.0497,
+          "delta_anchor_ci95": [
+            -0.0556202279650347,
+            -0.0437797720349653
+          ],
+          "mean_moves": 0.2078,
+          "mean_decoys": 0.9593,
+          "mean_turns": 6.8856,
+          "cost_reach_plus_001_moves": 0.707678,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7062,
+              "delta_anchor": -0.0536
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.705,
+              "delta_anchor": -0.0458
+            }
+          ]
+        },
+        {
+          "condition": "uniform",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "sweep",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7563,
+          "reach_rate": 0.7563,
+          "ci95": [
+            0.7477882260607257,
+            0.7646149363744653
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 1.3574,
+          "mean_turns": 5.8007,
+          "cost_reach_plus_001_moves": 0.7563,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7608,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7518,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "uniform",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "persistent",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 1991,
+          "reach_rate": 0.1991,
+          "ci95": [
+            0.19138959981080983,
+            0.20704149040866332
+          ],
+          "delta_anchor": -0.5572,
+          "delta_anchor_ci95": [
+            -0.5669359686504796,
+            -0.5474640313495205
+          ],
+          "mean_moves": 2.1758,
+          "mean_decoys": 10.514,
+          "mean_turns": 13.0663,
+          "cost_reach_plus_001_moves": 0.220858,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.2016,
+              "delta_anchor": -0.5592
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.1966,
+              "delta_anchor": -0.5552
+            }
+          ]
+        },
+        {
+          "condition": "physical_A_skew",
+          "config": {
+            "weights": [
+              5,
+              1,
+              1,
+              1
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": false,
+            "stream": "mt19937"
+          },
+          "agent": "random",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7401,
+          "reach_rate": 0.7401,
+          "ci95": [
+            0.7314129575348286,
+            0.7486026464475725
+          ],
+          "delta_anchor": 0.0025,
+          "delta_anchor_ci95": [
+            0.0014827013911980283,
+            0.003517298608801972
+          ],
+          "mean_moves": 0.0279,
+          "mean_decoys": 1.7555,
+          "mean_turns": 7.0155,
+          "cost_reach_plus_001_moves": 0.740379,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7366,
+              "delta_anchor": 0.0022
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7436,
+              "delta_anchor": 0.0028
+            }
+          ]
+        },
+        {
+          "condition": "physical_A_skew",
+          "config": {
+            "weights": [
+              5,
+              1,
+              1,
+              1
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": false,
+            "stream": "mt19937"
+          },
+          "agent": "learning",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 6892,
+          "reach_rate": 0.6892,
+          "ci95": [
+            0.6800576716806539,
+            0.6981970233358821
+          ],
+          "delta_anchor": -0.0556,
+          "delta_anchor_ci95": [
+            -0.06165112247355439,
+            -0.0495488775264456
+          ],
+          "mean_moves": 0.208,
+          "mean_decoys": 0.9822,
+          "mean_turns": 7.1092,
+          "cost_reach_plus_001_moves": 0.69128,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.6858,
+              "delta_anchor": -0.0562
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.6926,
+              "delta_anchor": -0.055
+            }
+          ]
+        },
+        {
+          "condition": "physical_A_skew",
+          "config": {
+            "weights": [
+              5,
+              1,
+              1,
+              1
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": false,
+            "stream": "mt19937"
+          },
+          "agent": "sweep",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7453,
+          "reach_rate": 0.7453,
+          "ci95": [
+            0.7366675102405285,
+            0.7537441001588174
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 1.3975,
+          "mean_turns": 5.9597,
+          "cost_reach_plus_001_moves": 0.7453,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7422,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7484,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "physical_A_skew",
+          "config": {
+            "weights": [
+              5,
+              1,
+              1,
+              1
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": false,
+            "stream": "mt19937"
+          },
+          "agent": "persistent",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 1912,
+          "reach_rate": 0.1912,
+          "ci95": [
+            0.1836116628426073,
+            0.1990254945511226
+          ],
+          "delta_anchor": -0.5541,
+          "delta_anchor_ci95": [
+            -0.5638427737668654,
+            -0.5443572262331347
+          ],
+          "mean_moves": 2.1934,
+          "mean_decoys": 10.5968,
+          "mean_turns": 13.1808,
+          "cost_reach_plus_001_moves": 0.21313400000000002,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.1926,
+              "delta_anchor": -0.5496
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.1898,
+              "delta_anchor": -0.5586
+            }
+          ]
+        },
+        {
+          "condition": "slow_learning",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.6,
+            "epsilon": 0.35,
+            "learning_rate": 0.2,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "random",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7505,
+          "reach_rate": 0.7505,
+          "ci95": [
+            0.7419236638497111,
+            0.7588839529665798
+          ],
+          "delta_anchor": 0.0011,
+          "delta_anchor_ci95": [
+            0.0002020455646051596,
+            0.0019979544353948405
+          ],
+          "mean_moves": 0.0229,
+          "mean_decoys": 1.722,
+          "mean_turns": 6.8947,
+          "cost_reach_plus_001_moves": 0.750729,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.754,
+              "delta_anchor": 0.0014
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.747,
+              "delta_anchor": 0.0008
+            }
+          ]
+        },
+        {
+          "condition": "slow_learning",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.6,
+            "epsilon": 0.35,
+            "learning_rate": 0.2,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "learning",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 6698,
+          "reach_rate": 0.6698,
+          "ci95": [
+            0.6605189201402477,
+            0.6789506740130704
+          ],
+          "delta_anchor": -0.0095,
+          "delta_anchor_ci95": [
+            -0.014122163227829582,
+            -0.004877836772170417
+          ],
+          "mean_moves": 0.2316,
+          "mean_decoys": 1.0095,
+          "mean_turns": 8.1176,
+          "cost_reach_plus_001_moves": 0.6721159999999999,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.6694,
+              "delta_anchor": -0.014
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.6702,
+              "delta_anchor": -0.005
+            }
+          ]
+        },
+        {
+          "condition": "slow_learning",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.6,
+            "epsilon": 0.35,
+            "learning_rate": 0.2,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "sweep",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7563,
+          "reach_rate": 0.7563,
+          "ci95": [
+            0.7477882260607257,
+            0.7646149363744653
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 1.3574,
+          "mean_turns": 5.8007,
+          "cost_reach_plus_001_moves": 0.7563,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7608,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7518,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "slow_learning",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.6,
+            "epsilon": 0.35,
+            "learning_rate": 0.2,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "persistent",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 2495,
+          "reach_rate": 0.2495,
+          "ci95": [
+            0.24111604703342016,
+            0.2580763361502888
+          ],
+          "delta_anchor": -0.5068,
+          "delta_anchor_ci95": [
+            -0.5165994035758719,
+            -0.49700059642412814
+          ],
+          "mean_moves": 1.8721,
+          "mean_decoys": 9.506,
+          "mean_turns": 12.5191,
+          "cost_reach_plus_001_moves": 0.268221,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.2494,
+              "delta_anchor": -0.5114
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.2496,
+              "delta_anchor": -0.5022
+            }
+          ]
+        },
+        {
+          "condition": "latency_one",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 1,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "random",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7494,
+          "reach_rate": 0.7494,
+          "ci95": [
+            0.7408116500730247,
+            0.7577968115396817
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 1.723,
+          "mean_turns": 6.8976,
+          "cost_reach_plus_001_moves": 0.7494,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7526,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7462,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "latency_one",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 1,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "learning",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7553,
+          "reach_rate": 0.7553,
+          "ci95": [
+            0.7467769475231529,
+            0.7636269829087796
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 0.7768,
+          "mean_turns": 6.3935,
+          "cost_reach_plus_001_moves": 0.7553,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7598,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7508,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "latency_one",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 1,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "sweep",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7563,
+          "reach_rate": 0.7563,
+          "ci95": [
+            0.7477882260607257,
+            0.7646149363744653
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 1.3574,
+          "mean_turns": 5.8007,
+          "cost_reach_plus_001_moves": 0.7563,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7608,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7518,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "latency_one",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 1,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "persistent",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7563,
+          "reach_rate": 0.7563,
+          "ci95": [
+            0.7477882260607257,
+            0.7646149363744653
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 2.5052,
+          "mean_turns": 9.2363,
+          "cost_reach_plus_001_moves": 0.7563,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7608,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7518,
+              "delta_anchor": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "threshold": 0.95,
+      "eligible": true,
+      "mean_reach": 0.67045625,
+      "cells": [
+        {
+          "condition": "uniform",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "random",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7498,
+          "reach_rate": 0.7498,
+          "ci95": [
+            0.7412160102797706,
+            0.7581921441342393
+          ],
+          "delta_anchor": 0.0004,
+          "delta_anchor_ci95": [
+            -8.005115436961256e-05,
+            0.0008800511543696125
+          ],
+          "mean_moves": 0.0058,
+          "mean_decoys": 1.7214,
+          "mean_turns": 6.8944,
+          "cost_reach_plus_001_moves": 0.749858,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7534,
+              "delta_anchor": 0.0008
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7462,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "uniform",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "learning",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7195,
+          "reach_rate": 0.7195,
+          "ci95": [
+            0.7106119881697138,
+            0.7282194365455591
+          ],
+          "delta_anchor": -0.0358,
+          "delta_anchor_ci95": [
+            -0.04093066060151813,
+            -0.030669339398481873
+          ],
+          "mean_moves": 0.1637,
+          "mean_decoys": 0.9044,
+          "mean_turns": 6.7311,
+          "cost_reach_plus_001_moves": 0.721137,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7206,
+              "delta_anchor": -0.0392
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7184,
+              "delta_anchor": -0.0324
+            }
+          ]
+        },
+        {
+          "condition": "uniform",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "sweep",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7563,
+          "reach_rate": 0.7563,
+          "ci95": [
+            0.7477882260607257,
+            0.7646149363744653
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 1.3574,
+          "mean_turns": 5.8007,
+          "cost_reach_plus_001_moves": 0.7563,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7608,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7518,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "uniform",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "persistent",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 3750,
+          "reach_rate": 0.375,
+          "ci95": [
+            0.36556106551239564,
+            0.3845349340802734
+          ],
+          "delta_anchor": -0.3813,
+          "delta_anchor_ci95": [
+            -0.39082013851936837,
+            -0.3717798614806316
+          ],
+          "mean_moves": 1.1679,
+          "mean_decoys": 6.756,
+          "mean_turns": 11.1314,
+          "cost_reach_plus_001_moves": 0.386679,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.372,
+              "delta_anchor": -0.3888
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.378,
+              "delta_anchor": -0.3738
+            }
+          ]
+        },
+        {
+          "condition": "physical_A_skew",
+          "config": {
+            "weights": [
+              5,
+              1,
+              1,
+              1
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": false,
+            "stream": "mt19937"
+          },
+          "agent": "random",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7380,
+          "reach_rate": 0.738,
+          "ci95": [
+            0.7292913732518825,
+            0.7465258435236753
+          ],
+          "delta_anchor": 0.0004,
+          "delta_anchor_ci95": [
+            8.06601230346829e-06,
+            0.0007919339876965317
+          ],
+          "mean_moves": 0.0047,
+          "mean_decoys": 1.7574,
+          "mean_turns": 7.0296,
+          "cost_reach_plus_001_moves": 0.738047,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7348,
+              "delta_anchor": 0.0004
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7412,
+              "delta_anchor": 0.0004
+            }
+          ]
+        },
+        {
+          "condition": "physical_A_skew",
+          "config": {
+            "weights": [
+              5,
+              1,
+              1,
+              1
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": false,
+            "stream": "mt19937"
+          },
+          "agent": "learning",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7037,
+          "reach_rate": 0.7037,
+          "ci95": [
+            0.6946734723312311,
+            0.7125700867325553
+          ],
+          "delta_anchor": -0.0411,
+          "delta_anchor_ci95": [
+            -0.04635248304371026,
+            -0.03584751695628974
+          ],
+          "mean_moves": 0.1602,
+          "mean_decoys": 0.9262,
+          "mean_turns": 6.9415,
+          "cost_reach_plus_001_moves": 0.705302,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.6992,
+              "delta_anchor": -0.0428
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7082,
+              "delta_anchor": -0.0394
+            }
+          ]
+        },
+        {
+          "condition": "physical_A_skew",
+          "config": {
+            "weights": [
+              5,
+              1,
+              1,
+              1
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": false,
+            "stream": "mt19937"
+          },
+          "agent": "sweep",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7453,
+          "reach_rate": 0.7453,
+          "ci95": [
+            0.7366675102405285,
+            0.7537441001588174
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 1.3975,
+          "mean_turns": 5.9597,
+          "cost_reach_plus_001_moves": 0.7453,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7422,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7484,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "physical_A_skew",
+          "config": {
+            "weights": [
+              5,
+              1,
+              1,
+              1
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": false,
+            "stream": "mt19937"
+          },
+          "agent": "persistent",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 3634,
+          "reach_rate": 0.3634,
+          "ci95": [
+            0.3540271104981653,
+            0.37287779785670344
+          ],
+          "delta_anchor": -0.3819,
+          "delta_anchor_ci95": [
+            -0.39142300490041754,
+            -0.3723769950995825
+          ],
+          "mean_moves": 1.1933,
+          "mean_decoys": 6.85,
+          "mean_turns": 11.287,
+          "cost_reach_plus_001_moves": 0.375333,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.368,
+              "delta_anchor": -0.3742
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.3588,
+              "delta_anchor": -0.3896
+            }
+          ]
+        },
+        {
+          "condition": "slow_learning",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.6,
+            "epsilon": 0.35,
+            "learning_rate": 0.2,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "random",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7497,
+          "reach_rate": 0.7497,
+          "ci95": [
+            0.7411149193248339,
+            0.7580933118888502
+          ],
+          "delta_anchor": 0.0003,
+          "delta_anchor_ci95": [
+            -3.944176755784468e-05,
+            0.0006394417675578447
+          ],
+          "mean_moves": 0.0041,
+          "mean_decoys": 1.7227,
+          "mean_turns": 6.8962,
+          "cost_reach_plus_001_moves": 0.749741,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7532,
+              "delta_anchor": 0.0006
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7462,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "slow_learning",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.6,
+            "epsilon": 0.35,
+            "learning_rate": 0.2,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "learning",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 6733,
+          "reach_rate": 0.6733,
+          "ci95": [
+            0.6640426184992193,
+            0.6824242876655041
+          ],
+          "delta_anchor": -0.006,
+          "delta_anchor_ci95": [
+            -0.009675521288574329,
+            -0.002324478711425671
+          ],
+          "mean_moves": 0.1787,
+          "mean_decoys": 0.98,
+          "mean_turns": 8.0746,
+          "cost_reach_plus_001_moves": 0.675087,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.6768,
+              "delta_anchor": -0.0066
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.6698,
+              "delta_anchor": -0.0054
+            }
+          ]
+        },
+        {
+          "condition": "slow_learning",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.6,
+            "epsilon": 0.35,
+            "learning_rate": 0.2,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "sweep",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7563,
+          "reach_rate": 0.7563,
+          "ci95": [
+            0.7477882260607257,
+            0.7646149363744653
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 1.3574,
+          "mean_turns": 5.8007,
+          "cost_reach_plus_001_moves": 0.7563,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7608,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7518,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "slow_learning",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.6,
+            "epsilon": 0.35,
+            "learning_rate": 0.2,
+            "switch_delay": 0,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "persistent",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 3797,
+          "reach_rate": 0.3797,
+          "ci95": [
+            0.3702359653712622,
+            0.38925642463672244
+          ],
+          "delta_anchor": -0.3766,
+          "delta_anchor_ci95": [
+            -0.38609715144861617,
+            -0.3671028485513838
+          ],
+          "mean_moves": 1.1328,
+          "mean_decoys": 6.7024,
+          "mean_turns": 11.0985,
+          "cost_reach_plus_001_moves": 0.391028,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.3768,
+              "delta_anchor": -0.384
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.3826,
+              "delta_anchor": -0.3692
+            }
+          ]
+        },
+        {
+          "condition": "latency_one",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 1,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "random",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7494,
+          "reach_rate": 0.7494,
+          "ci95": [
+            0.7408116500730247,
+            0.7577968115396817
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 1.723,
+          "mean_turns": 6.8976,
+          "cost_reach_plus_001_moves": 0.7494,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7526,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7462,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "latency_one",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 1,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "learning",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7553,
+          "reach_rate": 0.7553,
+          "ci95": [
+            0.7467769475231529,
+            0.7636269829087796
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 0.7768,
+          "mean_turns": 6.3935,
+          "cost_reach_plus_001_moves": 0.7553,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7598,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7508,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "latency_one",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 1,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "sweep",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7563,
+          "reach_rate": 0.7563,
+          "ci95": [
+            0.7477882260607257,
+            0.7646149363744653
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 1.3574,
+          "mean_turns": 5.8007,
+          "cost_reach_plus_001_moves": 0.7563,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7608,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7518,
+              "delta_anchor": 0.0
+            }
+          ]
+        },
+        {
+          "condition": "latency_one",
+          "config": {
+            "weights": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "budget": 16,
+            "hint": 0.24,
+            "epsilon": 0.16,
+            "learning_rate": 0.48,
+            "switch_delay": 1,
+            "linked": false,
+            "shuffle_labels": true,
+            "stream": "mt19937"
+          },
+          "agent": "persistent",
+          "policy": "robust",
+          "n": 10000,
+          "seed_start": 202610240000,
+          "reached": 7563,
+          "reach_rate": 0.7563,
+          "ci95": [
+            0.7477882260607257,
+            0.7646149363744653
+          ],
+          "delta_anchor": 0.0,
+          "delta_anchor_ci95": [
+            0.0,
+            0.0
+          ],
+          "mean_moves": 0.0,
+          "mean_decoys": 2.5052,
+          "mean_turns": 9.2363,
+          "cost_reach_plus_001_moves": 0.7563,
+          "blocks": [
+            {
+              "n": 5000,
+              "reach_rate": 0.7608,
+              "delta_anchor": 0.0
+            },
+            {
+              "n": 5000,
+              "reach_rate": 0.7518,
+              "delta_anchor": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

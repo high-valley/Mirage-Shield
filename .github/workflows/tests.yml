@@ -18,3 +18,4 @@ jobs:
       - run: node tests/legacy_parity.js
       - run: python -m tests.fair_fixtures > /tmp/mirage-fair.json
       - run: node tests/browser_smoke.js
+      - run: node tests/research_dashboard.js

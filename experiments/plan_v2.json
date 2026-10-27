@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "n": 10000,
+  "pilot_seed_range": [100000,100999],
+  "development_seed": 202610240000,
+  "holdout_seed": 202611170000,
+  "replication_blocks": 2,
+  "thresholds": [0.6,0.8,0.95],
+  "selection_rule": "For robust, eligible if each development cell target-reach difference vs fixed_anchor <= +0.01. Among eligible choose minimum mean reach, ties choose higher threshold. If none eligible, selected policy=fixed_anchor. Operational delay > 0 always falls back to anchor for belief/gated/robust.",
+  "primary_comparator": "fixed_anchor (independent uniformly random initial protected entrance)",
+  "secondary_comparator": "per-episode arithmetic mean of fixed_A/B/C/D, no hindsight best entrance",
+  "development_agents": ["random","learning","sweep","persistent"],
+  "holdout_agents": ["random","learning","sweep","persistent","reverse","switching"],
+  "development": [
+    {"name":"uniform"},
+    {"name":"physical_A_skew","weights":[5,1,1,1],"shuffle_labels":false},
+    {"name":"slow_learning","learning_rate":0.2,"hint":0.6,"epsilon":0.35},
+    {"name":"latency_one","switch_delay":1}
+  ],
+  "holdout": [
+    {"name":"unseen_C_skew_sha256","weights":[1,1,7,1],"shuffle_labels":false,"stream":"sha256"},
+    {"name":"short_horizon","budget":7},
+    {"name":"long_low_exploration","budget":27,"epsilon":0.04,"learning_rate":0.8,"hint":0.05},
+    {"name":"latency_two","switch_delay":2},
+    {"name":"importance_linked_sha256","linked":true,"stream":"sha256"},
+    {"name":"randomized_labels_skew","weights":[1,6,1,2]}
+  ],
+  "holdout_rule": "Freeze engine_v2.py, evaluate_v2.py, plan_v2.json hashes and selected threshold before holdout. Use disjoint seed namespaces and report all policies/conditions. No tuning after holdout. Conditions are designed stresses, not real-world unknown attacks.",
+  "intervals": "Wilson reach CI; paired normal difference CI exploratory; Hoeffding union-bound simultaneous difference intervals over all nontrivial heldout contrasts vs both comparators at family alpha=0.05. Reach difference range [-1,+1].",
+  "operating_cost": "Report moves and reach + 0.01*moves as descriptive cost only; primary objective stays target reach. Halt on target reach, so episode lengths differ."
+}
