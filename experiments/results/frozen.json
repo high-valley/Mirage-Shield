@@ -1,0 +1,19 @@
+{
+  "margin": 0.1,
+  "trials": [
+    {
+      "margin": 0.0,
+      "reach_rate": 0.8451666666666666
+    },
+    {
+      "margin": 0.1,
+      "reach_rate": 0.8387
+    },
+    {
+      "margin": 0.3,
+      "reach_rate": 0.8428666666666667
+    }
+  ],
+  "engine_sha256": "70bc613400dc72a892a27f76dae55cc846a6ba4d338efe1841265cafa3de4d65",
+  "plan_sha256": "36d35923cb090b5d572572eda074930e2aa4a27a9378ae3ea21d7fe50b8f7e49"
+}

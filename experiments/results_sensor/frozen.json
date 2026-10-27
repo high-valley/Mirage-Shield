@@ -1,0 +1,10 @@
+{
+  "hashes": {
+    "engine_v2.py": "5bb3a90d5d16133317be6120047b9d61545c7a47d9991d5099a534cb9b38f41f",
+    "sensor_audit.py": "a88011fa8d0f0f80872d7dc490ad05ec6cae9ffa0604d5ebbc84fc12872ceb57",
+    "plan_sensor_audit.json": "e61dde02fa517f505ebb9b83a5c339df6b1ca969ea540ce718f74a14b5ed972b",
+    "results_v2/frozen.json": "13b708de5c8fce98e826202668340f0eb962b70ade09e1ed10ede7201becfdc3"
+  },
+  "threshold": 0.8,
+  "selected_policy": "robust"
+}

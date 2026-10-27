@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "base_commit": "f39a0eb6938b9ebc65c04f7d41579a295ac21c8c",
+  "n": 10000,
+  "development_seed": 31000000,
+  "holdout_seed": 91000000,
+  "selection": "minimum mean target reach across development learning/random and uniform/A/D, ties prefer larger margin",
+  "margins": [0.0, 0.1, 0.3],
+  "holdout": [
+    {"name":"unseen_B", "bias":"B"},
+    {"name":"short_budget", "budget":8},
+    {"name":"noisy_slow", "hint":0.6,"learning_rate":0.2,"epsilon":0.35},
+    {"name":"switch_latency", "switch_delay":1},
+    {"name":"linked_importance", "linked":true}
+  ],
+  "holdout_rule": "Freeze selected margin before running holdout; report all conditions without further tuning. Sweep/persistent are held-out agent types."
+}

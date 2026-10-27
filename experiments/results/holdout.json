@@ -1,0 +1,4209 @@
+{
+  "phase": "holdout",
+  "python": "3.12.14",
+  "engine_sha256": "70bc613400dc72a892a27f76dae55cc846a6ba4d338efe1841265cafa3de4d65",
+  "plan_sha256": "36d35923cb090b5d572572eda074930e2aa4a27a9378ae3ea21d7fe50b8f7e49",
+  "margin": 0.1,
+  "rows": [
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9891,
+      "reach_rate": 0.9891,
+      "ci95": [
+        0.9868688476233592,
+        0.9909555251704448
+      ],
+      "delta_fixed": 0.123,
+      "delta_ci95": [
+        0.11656242711270952,
+        0.1294375728872905
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 3.9721
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8661,
+      "reach_rate": 0.8661,
+      "ci95": [
+        0.8592846629463341,
+        0.8726341734466564
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.3703,
+      "mean_turns": 5.461
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9876,
+      "reach_rate": 0.9876,
+      "ci95": [
+        0.9852361608857194,
+        0.9895893639031967
+      ],
+      "delta_fixed": 0.1215,
+      "delta_ci95": [
+        0.11509633169030152,
+        0.12790366830969846
+      ],
+      "mean_moves": 1.6047,
+      "mean_decoys": 1.0466,
+      "mean_turns": 4.1715
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7503,
+      "reach_rate": 0.7503,
+      "ci95": [
+        0.7417214740977823,
+        0.7586862963178568
+      ],
+      "delta_fixed": -0.1158,
+      "delta_ci95": [
+        -0.1263986690640564,
+        -0.10520133093594361
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7383,
+      "mean_turns": 6.9073
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8710,
+      "reach_rate": 0.871,
+      "ci95": [
+        0.8642874552693725,
+        0.8774276179395855
+      ],
+      "delta_fixed": 0.0049,
+      "delta_ci95": [
+        0.0035313222412151303,
+        0.006268677758784869
+      ],
+      "mean_moves": 0.0389,
+      "mean_decoys": 1.3637,
+      "mean_turns": 5.4391
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8770,
+      "reach_rate": 0.877,
+      "ci95": [
+        0.8704175897351235,
+        0.8832928754933863
+      ],
+      "delta_fixed": 0.0109,
+      "delta_ci95": [
+        0.00886481845067773,
+        0.01293518154932227
+      ],
+      "mean_moves": 0.0925,
+      "mean_decoys": 1.3589,
+      "mean_turns": 5.42
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9601,
+      "reach_rate": 0.9601,
+      "ci95": [
+        0.9560838665632115,
+        0.9637627781360917
+      ],
+      "delta_fixed": 0.094,
+      "delta_ci95": [
+        0.08688510996774995,
+        0.10111489003225005
+      ],
+      "mean_moves": 1.9155,
+      "mean_decoys": 1.3377,
+      "mean_turns": 5.3079
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9980,
+      "reach_rate": 0.998,
+      "ci95": [
+        0.9969126493353494,
+        0.9987048882874566
+      ],
+      "delta_fixed": 0.1231,
+      "delta_ci95": [
+        0.11661262740283931,
+        0.1295873725971607
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 3.6502
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8749,
+      "reach_rate": 0.8749,
+      "ci95": [
+        0.8682714925658634,
+        0.8812405854558032
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.6602,
+      "mean_turns": 4.8801
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9870,
+      "reach_rate": 0.987,
+      "ci95": [
+        0.984585425782268,
+        0.9890405598046929
+      ],
+      "delta_fixed": 0.1121,
+      "delta_ci95": [
+        0.10591621130290255,
+        0.11828378869709746
+      ],
+      "mean_moves": 1.38,
+      "mean_decoys": 0.7019,
+      "mean_turns": 3.3676
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7582,
+      "reach_rate": 0.7582,
+      "ci95": [
+        0.7497098259662934,
+        0.7664918772750892
+      ],
+      "delta_fixed": -0.1167,
+      "delta_ci95": [
+        -0.12736535110235261,
+        -0.10603464889764737
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.7764,
+      "mean_turns": 6.3874
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8885,
+      "reach_rate": 0.8885,
+      "ci95": [
+        0.8821812047923988,
+        0.8945204284735854
+      ],
+      "delta_fixed": 0.0136,
+      "delta_ci95": [
+        0.011329791252203377,
+        0.015870208747796623
+      ],
+      "mean_moves": 0.1875,
+      "mean_decoys": 0.7109,
+      "mean_turns": 4.7828
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8910,
+      "reach_rate": 0.891,
+      "ci95": [
+        0.8847411676786084,
+        0.8969585455955223
+      ],
+      "delta_fixed": 0.0161,
+      "delta_ci95": [
+        0.013633062054791633,
+        0.018566937945208365
+      ],
+      "mean_moves": 0.2763,
+      "mean_decoys": 0.7375,
+      "mean_turns": 4.779
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8055,
+      "reach_rate": 0.8055,
+      "ci95": [
+        0.7976254537634688,
+        0.8131399232320478
+      ],
+      "delta_fixed": -0.0694,
+      "delta_ci95": [
+        -0.07688383496328356,
+        -0.061916165036716445
+      ],
+      "mean_moves": 4.7114,
+      "mean_decoys": 3.92,
+      "mean_turns": 6.8815
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.1243,
+      "delta_ci95": [
+        0.1178332950539661,
+        0.1307667049460339
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 2.2523
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8757,
+      "reach_rate": 0.8757,
+      "ci95": [
+        0.8690889824124017,
+        0.882022481211872
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.3729,
+      "mean_turns": 4.1168
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.1243,
+      "delta_ci95": [
+        0.1178332950539661,
+        0.1307667049460339
+      ],
+      "mean_moves": 0.7495,
+      "mean_decoys": 1.0,
+      "mean_turns": 2.7495
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7585,
+      "reach_rate": 0.7585,
+      "ci95": [
+        0.7500132570142136,
+        0.7667882158281464
+      ],
+      "delta_fixed": -0.1172,
+      "delta_ci95": [
+        -0.12786504581389882,
+        -0.10653495418610118
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.2806,
+      "mean_turns": 5.568
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8757,
+      "reach_rate": 0.8757,
+      "ci95": [
+        0.8690889824124017,
+        0.882022481211872
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.3729,
+      "mean_turns": 4.1168
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8757,
+      "reach_rate": 0.8757,
+      "ci95": [
+        0.8690889824124017,
+        0.882022481211872
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.3729,
+      "mean_turns": 4.1168
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8757,
+      "reach_rate": 0.8757,
+      "ci95": [
+        0.8690889824124017,
+        0.882022481211872
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 12.4207,
+      "mean_decoys": 13.0,
+      "mean_turns": 14.6252
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.1243,
+      "delta_ci95": [
+        0.1178332950539661,
+        0.1307667049460339
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 7.0012
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8757,
+      "reach_rate": 0.8757,
+      "ci95": [
+        0.8690889824124017,
+        0.882022481211872
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 2.748,
+      "mean_turns": 8.1193
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9690,
+      "reach_rate": 0.969,
+      "ci95": [
+        0.9654188223848608,
+        0.9722209871434444
+      ],
+      "delta_fixed": 0.0933,
+      "delta_ci95": [
+        0.08759911294963449,
+        0.0990008870503655
+      ],
+      "mean_moves": 1.3743,
+      "mean_decoys": 3.4365,
+      "mean_turns": 7.4662
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7585,
+      "reach_rate": 0.7585,
+      "ci95": [
+        0.7500132570142136,
+        0.7667882158281464
+      ],
+      "delta_fixed": -0.1172,
+      "delta_ci95": [
+        -0.12786504581389882,
+        -0.10653495418610118
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 2.4836,
+      "mean_turns": 9.1857
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8757,
+      "reach_rate": 0.8757,
+      "ci95": [
+        0.8690889824124017,
+        0.882022481211872
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 2.748,
+      "mean_turns": 8.1193
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9379,
+      "reach_rate": 0.9379,
+      "ci95": [
+        0.9329996468793823,
+        0.942464047347579
+      ],
+      "delta_fixed": 0.0622,
+      "delta_ci95": [
+        0.057466088731089035,
+        0.06693391126891096
+      ],
+      "mean_moves": 0.8117,
+      "mean_decoys": 2.3429,
+      "mean_turns": 7.8083
+    },
+    {
+      "condition": "unseen_B",
+      "config": {
+        "bias": "B",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.1243,
+      "delta_ci95": [
+        0.1178332950539661,
+        0.1307667049460339
+      ],
+      "mean_moves": 2.2713,
+      "mean_decoys": 1.6192,
+      "mean_turns": 7.4975
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8973,
+      "reach_rate": 0.8973,
+      "ci95": [
+        0.8911968269050489,
+        0.9030980479896115
+      ],
+      "delta_fixed": 0.2246,
+      "delta_ci95": [
+        0.21642029613103286,
+        0.23277970386896712
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 3.6457
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 6727,
+      "reach_rate": 0.6727,
+      "ci95": [
+        0.6634385147616252,
+        0.681828852201143
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.1907,
+      "mean_turns": 4.7392
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8787,
+      "reach_rate": 0.8787,
+      "ci95": [
+        0.872155352019388,
+        0.8849538076146616
+      ],
+      "delta_fixed": 0.206,
+      "delta_ci95": [
+        0.19807291220391157,
+        0.2139270877960884
+      ],
+      "mean_moves": 1.5628,
+      "mean_decoys": 0.9958,
+      "mean_turns": 3.9509
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 6781,
+      "reach_rate": 0.6781,
+      "ci95": [
+        0.6688760655962712,
+        0.6871871541840938
+      ],
+      "delta_fixed": 0.0054,
+      "delta_ci95": [
+        -0.006078850650527391,
+        0.01687885065052739
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.2017,
+      "mean_turns": 4.7176
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 6749,
+      "reach_rate": 0.6749,
+      "ci95": [
+        0.6656536454027459,
+        0.6840120319671915
+      ],
+      "delta_fixed": 0.0022,
+      "delta_ci95": [
+        0.0012816612775863145,
+        0.0031183387224136857
+      ],
+      "mean_moves": 0.0176,
+      "mean_decoys": 1.1894,
+      "mean_turns": 4.7376
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 6754,
+      "reach_rate": 0.6754,
+      "ci95": [
+        0.6661571163019592,
+        0.6845081770696074
+      ],
+      "delta_fixed": 0.0027,
+      "delta_ci95": [
+        0.0016828977889130773,
+        0.003717102211086923
+      ],
+      "mean_moves": 0.0218,
+      "mean_decoys": 1.1895,
+      "mean_turns": 4.7379
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7778,
+      "reach_rate": 0.7778,
+      "ci95": [
+        0.7695461338745871,
+        0.7858405166306649
+      ],
+      "delta_fixed": 0.1051,
+      "delta_ci95": [
+        0.0954886188323189,
+        0.11471138116768109
+      ],
+      "mean_moves": 1.4964,
+      "mean_decoys": 1.1291,
+      "mean_turns": 4.4579
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9288,
+      "reach_rate": 0.9288,
+      "ci95": [
+        0.9235934034076022,
+        0.9336772795897054
+      ],
+      "delta_fixed": 0.2095,
+      "delta_ci95": [
+        0.20055623585055385,
+        0.21844376414944613
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 3.484
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7193,
+      "reach_rate": 0.7193,
+      "ci95": [
+        0.7104101519666586,
+        0.7280214263479627
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.6812,
+      "mean_turns": 4.4166
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9397,
+      "reach_rate": 0.9397,
+      "ci95": [
+        0.9348634629701361,
+        0.9441988488626908
+      ],
+      "delta_fixed": 0.2204,
+      "delta_ci95": [
+        0.21213923183218242,
+        0.2286607681678176
+      ],
+      "mean_moves": 1.4505,
+      "mean_decoys": 0.7011,
+      "mean_turns": 3.4151
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7272,
+      "reach_rate": 0.7272,
+      "ci95": [
+        0.7183843381990263,
+        0.7358411729413381
+      ],
+      "delta_fixed": 0.0079,
+      "delta_ci95": [
+        -0.004157768483299568,
+        0.019957768483299568
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.6788,
+      "mean_turns": 4.382
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7315,
+      "reach_rate": 0.7315,
+      "ci95": [
+        0.7227261657809742,
+        0.7400960429734026
+      ],
+      "delta_fixed": 0.0122,
+      "delta_ci95": [
+        0.009909899269550302,
+        0.0144901007304497
+      ],
+      "mean_moves": 0.0738,
+      "mean_decoys": 0.6971,
+      "mean_turns": 4.408
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7304,
+      "reach_rate": 0.7304,
+      "ci95": [
+        0.7216153673224028,
+        0.7390076862283894
+      ],
+      "delta_fixed": 0.0111,
+      "delta_ci95": [
+        0.009027815826723072,
+        0.01317218417327693
+      ],
+      "mean_moves": 0.0951,
+      "mean_decoys": 0.7117,
+      "mean_turns": 4.4139
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 6270,
+      "reach_rate": 0.627,
+      "ci95": [
+        0.6174744995819025,
+        0.6364279648319456
+      ],
+      "delta_fixed": -0.0923,
+      "delta_ci95": [
+        -0.10097713731496384,
+        -0.08362286268503615
+      ],
+      "mean_moves": 2.7881,
+      "mean_decoys": 2.5408,
+      "mean_turns": 4.9058
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2495,
+      "delta_ci95": [
+        0.24101834837885633,
+        0.25798165162114367
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 2.5023
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7505,
+      "reach_rate": 0.7505,
+      "ci95": [
+        0.7419236638497111,
+        0.7588839529665798
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.2495,
+      "mean_turns": 4.2488
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2495,
+      "delta_ci95": [
+        0.24101834837885633,
+        0.25798165162114367
+      ],
+      "mean_moves": 1.5003,
+      "mean_decoys": 1.0,
+      "mean_turns": 3.5003
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7588,
+      "reach_rate": 0.7588,
+      "ci95": [
+        0.7503166936827024,
+        0.7670845487606355
+      ],
+      "delta_fixed": 0.0083,
+      "delta_ci95": [
+        -0.0037894855094658206,
+        0.020389485509465823
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.8571,
+      "mean_turns": 3.8147
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7505,
+      "reach_rate": 0.7505,
+      "ci95": [
+        0.7419236638497111,
+        0.7588839529665798
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.2495,
+      "mean_turns": 4.2488
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7505,
+      "reach_rate": 0.7505,
+      "ci95": [
+        0.7419236638497111,
+        0.7588839529665798
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.2495,
+      "mean_turns": 4.2488
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 0,
+      "reach_rate": 0.0,
+      "ci95": [
+        0.0,
+        0.00038399837067659573
+      ],
+      "delta_fixed": -0.7505,
+      "delta_ci95": [
+        -0.7589816516211436,
+        -0.7420183483788563
+      ],
+      "mean_moves": 7.0,
+      "mean_decoys": 8.0,
+      "mean_turns": 8.0
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 4999,
+      "reach_rate": 0.4999,
+      "ci95": [
+        0.4901021004111254,
+        0.5096979763885487
+      ],
+      "delta_fixed": 0.1247,
+      "delta_ci95": [
+        0.11822437788139786,
+        0.13117562211860215
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 5.5007
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 3752,
+      "reach_rate": 0.3752,
+      "ci95": [
+        0.36575997805059673,
+        0.384735867942724
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7496,
+      "mean_turns": 6.124
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 4376,
+      "reach_rate": 0.4376,
+      "ci95": [
+        0.42790259485949045,
+        0.4473453281371699
+      ],
+      "delta_fixed": 0.0624,
+      "delta_ci95": [
+        0.05765898967631859,
+        0.0671410103236814
+      ],
+      "mean_moves": 1.1248,
+      "mean_decoys": 3.2496,
+      "mean_turns": 5.9368
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 3802,
+      "reach_rate": 0.3802,
+      "ci95": [
+        0.37073335095767973,
+        0.38975865505193424
+      ],
+      "delta_fixed": 0.005,
+      "delta_ci95": [
+        -0.0035296484046580543,
+        0.013529648404658055
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7316,
+      "mean_turns": 6.1046
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 3752,
+      "reach_rate": 0.3752,
+      "ci95": [
+        0.36575997805059673,
+        0.384735867942724
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7496,
+      "mean_turns": 6.124
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 3752,
+      "reach_rate": 0.3752,
+      "ci95": [
+        0.36575997805059673,
+        0.384735867942724
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7496,
+      "mean_turns": 6.124
+    },
+    {
+      "condition": "short_budget",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 8,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 4999,
+      "reach_rate": 0.4999,
+      "ci95": [
+        0.4901021004111254,
+        0.5096979763885487
+      ],
+      "delta_fixed": 0.1247,
+      "delta_ci95": [
+        0.11822437788139786,
+        0.13117562211860215
+      ],
+      "mean_moves": 1.4691,
+      "mean_decoys": 1.0113,
+      "mean_turns": 5.6724
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9899,
+      "reach_rate": 0.9899,
+      "ci95": [
+        0.9877434785006571,
+        0.9916802798957538
+      ],
+      "delta_fixed": 0.2475,
+      "delta_ci95": [
+        0.23904116291585262,
+        0.25595883708414735
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 4.019
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7424,
+      "reach_rate": 0.7424,
+      "ci95": [
+        0.7337368912176716,
+        0.7508769463722242
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7612,
+      "mean_turns": 7.0197
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9873,
+      "reach_rate": 0.9873,
+      "ci95": [
+        0.9849106380508621,
+        0.9893151171370764
+      ],
+      "delta_fixed": 0.2449,
+      "delta_ci95": [
+        0.2364711866942185,
+        0.25332881330578155
+      ],
+      "mean_moves": 1.7084,
+      "mean_decoys": 1.1132,
+      "mean_turns": 4.4023
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7507,
+      "reach_rate": 0.7507,
+      "ci95": [
+        0.7421258560186711,
+        0.7590816071982717
+      ],
+      "delta_fixed": 0.0083,
+      "delta_ci95": [
+        -0.0037321484532807352,
+        0.020332148453280734
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.744,
+      "mean_turns": 6.9397
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7513,
+      "reach_rate": 0.7513,
+      "ci95": [
+        0.7427324470471706,
+        0.7596745553717272
+      ],
+      "delta_fixed": 0.0089,
+      "delta_ci95": [
+        0.007059128185885108,
+        0.010740871814114893
+      ],
+      "mean_moves": 0.0524,
+      "mean_decoys": 1.749,
+      "mean_turns": 6.98
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7626,
+      "reach_rate": 0.7626,
+      "ci95": [
+        0.7541607143616639,
+        0.7708376096940567
+      ],
+      "delta_fixed": 0.0202,
+      "delta_ci95": [
+        0.017442508330363746,
+        0.022957491669636253
+      ],
+      "mean_moves": 0.1311,
+      "mean_decoys": 1.7376,
+      "mean_turns": 6.9418
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9731,
+      "reach_rate": 0.9731,
+      "ci95": [
+        0.9697426894962444,
+        0.9760939712454213
+      ],
+      "delta_fixed": 0.2307,
+      "delta_ci95": [
+        0.22195457525762613,
+        0.23944542474237385
+      ],
+      "mean_moves": 2.3596,
+      "mean_decoys": 1.2401,
+      "mean_turns": 4.9254
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8592,
+      "reach_rate": 0.8592,
+      "ci95": [
+        0.8522449300847309,
+        0.865879205485775
+      ],
+      "delta_fixed": 0.191,
+      "delta_ci95": [
+        0.1821185397375066,
+        0.1998814602624934
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 6.3384
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 6682,
+      "reach_rate": 0.6682,
+      "ci95": [
+        0.6589082789680993,
+        0.6773625439800051
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.9727,
+      "mean_turns": 8.2045
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9815,
+      "reach_rate": 0.9815,
+      "ci95": [
+        0.9786680814268851,
+        0.9839621281421533
+      ],
+      "delta_fixed": 0.3133,
+      "delta_ci95": [
+        0.30419587369359763,
+        0.3224041263064024
+      ],
+      "mean_moves": 1.6624,
+      "mean_decoys": 1.268,
+      "mean_turns": 4.6057
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 6812,
+      "reach_rate": 0.6812,
+      "ci95": [
+        0.6719982539989185,
+        0.6902625849915484
+      ],
+      "delta_fixed": 0.013,
+      "delta_ci95": [
+        0.0012260624541523268,
+        0.024773937545847672
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.9675,
+      "mean_turns": 8.089
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7874,
+      "reach_rate": 0.7874,
+      "ci95": [
+        0.7792712859832519,
+        0.7953079917532831
+      ],
+      "delta_fixed": 0.1192,
+      "delta_ci95": [
+        0.11282478395342661,
+        0.1255752160465734
+      ],
+      "mean_moves": 0.7239,
+      "mean_decoys": 1.2208,
+      "mean_turns": 7.4557
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7965,
+      "reach_rate": 0.7965,
+      "ci95": [
+        0.7884959990480997,
+        0.8042762899180889
+      ],
+      "delta_fixed": 0.1283,
+      "delta_ci95": [
+        0.12173337956296908,
+        0.13486662043703093
+      ],
+      "mean_moves": 0.9903,
+      "mean_decoys": 1.2767,
+      "mean_turns": 7.4711
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8893,
+      "reach_rate": 0.8893,
+      "ci95": [
+        0.8830002848148478,
+        0.8953007340537432
+      ],
+      "delta_fixed": 0.2211,
+      "delta_ci95": [
+        0.21217763096765813,
+        0.23002236903234186
+      ],
+      "mean_moves": 4.5953,
+      "mean_decoys": 3.2142,
+      "mean_turns": 6.6135
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2495,
+      "delta_ci95": [
+        0.24101834837885633,
+        0.25798165162114367
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 2.5023
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7505,
+      "reach_rate": 0.7505,
+      "ci95": [
+        0.7419236638497111,
+        0.7588839529665798
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7485,
+      "mean_turns": 6.2448
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2495,
+      "delta_ci95": [
+        0.24101834837885633,
+        0.25798165162114367
+      ],
+      "mean_moves": 1.5003,
+      "mean_decoys": 1.0,
+      "mean_turns": 3.5003
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7588,
+      "reach_rate": 0.7588,
+      "ci95": [
+        0.7503166936827024,
+        0.7670845487606355
+      ],
+      "delta_fixed": 0.0083,
+      "delta_ci95": [
+        -0.0037894855094658206,
+        0.020389485509465823
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.3395,
+      "mean_turns": 5.7443
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7505,
+      "reach_rate": 0.7505,
+      "ci95": [
+        0.7419236638497111,
+        0.7588839529665798
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7485,
+      "mean_turns": 6.2448
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7505,
+      "reach_rate": 0.7505,
+      "ci95": [
+        0.7419236638497111,
+        0.7588839529665798
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7485,
+      "mean_turns": 6.2448
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7505,
+      "reach_rate": 0.7505,
+      "ci95": [
+        0.7419236638497111,
+        0.7588839529665798
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 12.8707,
+      "mean_decoys": 13.0,
+      "mean_turns": 15.2508
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2495,
+      "delta_ci95": [
+        0.24101834837885633,
+        0.25798165162114367
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 7.0012
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7505,
+      "reach_rate": 0.7505,
+      "ci95": [
+        0.7419236638497111,
+        0.7588839529665798
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 2.498,
+      "mean_turns": 9.2461
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9377,
+      "reach_rate": 0.9377,
+      "ci95": [
+        0.9327926265994174,
+        0.9422712212268921
+      ],
+      "delta_fixed": 0.1872,
+      "delta_ci95": [
+        0.17955434712426177,
+        0.19484565287573824
+      ],
+      "mean_moves": 1.4995,
+      "mean_decoys": 3.6243,
+      "mean_turns": 7.9357
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7588,
+      "reach_rate": 0.7588,
+      "ci95": [
+        0.7503166936827024,
+        0.7670845487606355
+      ],
+      "delta_fixed": 0.0083,
+      "delta_ci95": [
+        -0.0037894855094658206,
+        0.020389485509465823
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 2.4728,
+      "mean_turns": 9.1756
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7505,
+      "reach_rate": 0.7505,
+      "ci95": [
+        0.7419236638497111,
+        0.7588839529665798
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 2.498,
+      "mean_turns": 9.2461
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8753,
+      "reach_rate": 0.8753,
+      "ci95": [
+        0.8686802266330965,
+        0.8816315441898736
+      ],
+      "delta_fixed": 0.1248,
+      "delta_ci95": [
+        0.11832215198891778,
+        0.1312778480110822
+      ],
+      "mean_moves": 1.1243,
+      "mean_decoys": 1.9365,
+      "mean_turns": 8.6221
+    },
+    {
+      "condition": "noisy_slow",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.6,
+        "learning_rate": 0.2,
+        "epsilon": 0.35,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2495,
+      "delta_ci95": [
+        0.24101834837885633,
+        0.25798165162114367
+      ],
+      "mean_moves": 3.3641,
+      "mean_decoys": 1.8869,
+      "mean_turns": 7.3355
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "random",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9899,
+      "reach_rate": 0.9899,
+      "ci95": [
+        0.9877434785006571,
+        0.9916802798957538
+      ],
+      "delta_fixed": 0.2475,
+      "delta_ci95": [
+        0.23904116291585262,
+        0.25595883708414735
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 4.019
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "random",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7424,
+      "reach_rate": 0.7424,
+      "ci95": [
+        0.7337368912176716,
+        0.7508769463722242
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7612,
+      "mean_turns": 7.0197
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "random",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9873,
+      "reach_rate": 0.9873,
+      "ci95": [
+        0.9849106380508621,
+        0.9893151171370764
+      ],
+      "delta_fixed": 0.2449,
+      "delta_ci95": [
+        0.2364711866942185,
+        0.25332881330578155
+      ],
+      "mean_moves": 1.7084,
+      "mean_decoys": 0.6823,
+      "mean_turns": 4.4023
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "random",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7507,
+      "reach_rate": 0.7507,
+      "ci95": [
+        0.7421258560186711,
+        0.7590816071982717
+      ],
+      "delta_fixed": 0.0083,
+      "delta_ci95": [
+        -0.0037321484532807352,
+        0.020332148453280734
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.744,
+      "mean_turns": 6.9397
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "random",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7540,
+      "reach_rate": 0.754,
+      "ci95": [
+        0.7454623775080667,
+        0.7623425513196296
+      ],
+      "delta_fixed": 0.0116,
+      "delta_ci95": [
+        0.009501228443513074,
+        0.013698771556486924
+      ],
+      "mean_moves": 0.0524,
+      "mean_decoys": 1.734,
+      "mean_turns": 6.9682
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "random",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7714,
+      "reach_rate": 0.7714,
+      "ci95": [
+        0.7630662070780555,
+        0.7795253586063412
+      ],
+      "delta_fixed": 0.029,
+      "delta_ci95": [
+        0.025710889828880104,
+        0.0322891101711199
+      ],
+      "mean_moves": 0.1301,
+      "mean_decoys": 1.698,
+      "mean_turns": 6.913
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "random",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9683,
+      "reach_rate": 0.9683,
+      "ci95": [
+        0.9646822658017162,
+        0.9715580813243081
+      ],
+      "delta_fixed": 0.2259,
+      "delta_ci95": [
+        0.21708039206467528,
+        0.2347196079353247
+      ],
+      "mean_moves": 1.5583,
+      "mean_decoys": 0.872,
+      "mean_turns": 5.0191
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "learning",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9975,
+      "reach_rate": 0.9975,
+      "ci95": [
+        0.9963119192323351,
+        0.9983060023888417
+      ],
+      "delta_fixed": 0.2477,
+      "delta_ci95": [
+        0.2391890707014907,
+        0.2562109292985093
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 3.6907
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "learning",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7498,
+      "reach_rate": 0.7498,
+      "ci95": [
+        0.7412160102797706,
+        0.7581921441342393
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.7863,
+      "mean_turns": 6.4959
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "learning",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9659,
+      "reach_rate": 0.9659,
+      "ci95": [
+        0.9621602196717023,
+        0.9692819706465012
+      ],
+      "delta_fixed": 0.2161,
+      "delta_ci95": [
+        0.20803271272296525,
+        0.22416728727703472
+      ],
+      "mean_moves": 1.569,
+      "mean_decoys": 0.6453,
+      "mean_turns": 4.0567
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "learning",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7583,
+      "reach_rate": 0.7583,
+      "ci95": [
+        0.7498109690248661,
+        0.7665906574168423
+      ],
+      "delta_fixed": 0.0085,
+      "delta_ci95": [
+        -0.003586253851555265,
+        0.020586253851555266
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.7771,
+      "mean_turns": 6.394
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "learning",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7839,
+      "reach_rate": 0.7839,
+      "ci95": [
+        0.7757249111986394,
+        0.7918570545264906
+      ],
+      "delta_fixed": 0.0341,
+      "delta_ci95": [
+        0.03054276071924197,
+        0.03765723928075802
+      ],
+      "mean_moves": 0.2906,
+      "mean_decoys": 0.8146,
+      "mean_turns": 6.3141
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "learning",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7932,
+      "reach_rate": 0.7932,
+      "ci95": [
+        0.7851500712726278,
+        0.8010247520828073
+      ],
+      "delta_fixed": 0.0434,
+      "delta_ci95": [
+        0.03940625933983841,
+        0.04739374066016159
+      ],
+      "mean_moves": 0.4647,
+      "mean_decoys": 0.8263,
+      "mean_turns": 6.29
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "learning",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9078,
+      "reach_rate": 0.9078,
+      "ci95": [
+        0.9019719979746198,
+        0.9133148129542564
+      ],
+      "delta_fixed": 0.158,
+      "delta_ci95": [
+        0.14997963326658761,
+        0.1660203667334124
+      ],
+      "mean_moves": 2.7604,
+      "mean_decoys": 1.6488,
+      "mean_turns": 5.9237
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "sweep",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2495,
+      "delta_ci95": [
+        0.24101834837885633,
+        0.25798165162114367
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 2.5023
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "sweep",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7505,
+      "reach_rate": 0.7505,
+      "ci95": [
+        0.7419236638497111,
+        0.7588839529665798
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7485,
+      "mean_turns": 6.2448
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "sweep",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2495,
+      "delta_ci95": [
+        0.24101834837885633,
+        0.25798165162114367
+      ],
+      "mean_moves": 1.5003,
+      "mean_decoys": 1.0,
+      "mean_turns": 3.5003
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "sweep",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7588,
+      "reach_rate": 0.7588,
+      "ci95": [
+        0.7503166936827024,
+        0.7670845487606355
+      ],
+      "delta_fixed": 0.0083,
+      "delta_ci95": [
+        -0.0037894855094658206,
+        0.020389485509465823
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.3395,
+      "mean_turns": 5.7443
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "sweep",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7505,
+      "reach_rate": 0.7505,
+      "ci95": [
+        0.7419236638497111,
+        0.7588839529665798
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7485,
+      "mean_turns": 6.2448
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "sweep",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7505,
+      "reach_rate": 0.7505,
+      "ci95": [
+        0.7419236638497111,
+        0.7588839529665798
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7485,
+      "mean_turns": 6.2448
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "sweep",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2495,
+      "delta_ci95": [
+        0.24101834837885633,
+        0.25798165162114367
+      ],
+      "mean_moves": 1.9668,
+      "mean_decoys": 1.0,
+      "mean_turns": 3.5003
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "persistent",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2495,
+      "delta_ci95": [
+        0.24101834837885633,
+        0.25798165162114367
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 7.0012
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "persistent",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7505,
+      "reach_rate": 0.7505,
+      "ci95": [
+        0.7419236638497111,
+        0.7588839529665798
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 2.498,
+      "mean_turns": 9.2461
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "persistent",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9377,
+      "reach_rate": 0.9377,
+      "ci95": [
+        0.9327926265994174,
+        0.9422712212268921
+      ],
+      "delta_fixed": 0.1872,
+      "delta_ci95": [
+        0.17955434712426177,
+        0.19484565287573824
+      ],
+      "mean_moves": 1.4995,
+      "mean_decoys": 2.1248,
+      "mean_turns": 7.9357
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "persistent",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7588,
+      "reach_rate": 0.7588,
+      "ci95": [
+        0.7503166936827024,
+        0.7670845487606355
+      ],
+      "delta_fixed": 0.0083,
+      "delta_ci95": [
+        -0.0037894855094658206,
+        0.020389485509465823
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 2.4728,
+      "mean_turns": 9.1756
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "persistent",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7505,
+      "reach_rate": 0.7505,
+      "ci95": [
+        0.7419236638497111,
+        0.7588839529665798
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 2.498,
+      "mean_turns": 9.2461
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "persistent",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8753,
+      "reach_rate": 0.8753,
+      "ci95": [
+        0.8686802266330965,
+        0.8816315441898736
+      ],
+      "delta_fixed": 0.1248,
+      "delta_ci95": [
+        0.11832215198891778,
+        0.1312778480110822
+      ],
+      "mean_moves": 1.1243,
+      "mean_decoys": 1.8742,
+      "mean_turns": 8.6221
+    },
+    {
+      "condition": "switch_latency",
+      "config": {
+        "bias": "uniform",
+        "linked": false,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 1
+      },
+      "agent": "persistent",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2495,
+      "delta_ci95": [
+        0.24101834837885633,
+        0.25798165162114367
+      ],
+      "mean_moves": 2.1096,
+      "mean_decoys": 0.9428,
+      "mean_turns": 7.3629
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9908,
+      "reach_rate": 0.9908,
+      "ci95": [
+        0.9887311605057931,
+        0.9924919066935507
+      ],
+      "delta_fixed": 0.2453,
+      "delta_ci95": [
+        0.23686654065010818,
+        0.2537334593498918
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 3.9856
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7455,
+      "reach_rate": 0.7455,
+      "ci95": [
+        0.7368696401856326,
+        0.7539418166143653
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7552,
+      "mean_turns": 6.9702
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9880,
+      "reach_rate": 0.988,
+      "ci95": [
+        0.9856706937299375,
+        0.989954523860282
+      ],
+      "delta_fixed": 0.2425,
+      "delta_ci95": [
+        0.23409927057632057,
+        0.2509007294236794
+      ],
+      "mean_moves": 1.6997,
+      "mean_decoys": 1.097,
+      "mean_turns": 4.3638
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 6011,
+      "reach_rate": 0.6011,
+      "ci95": [
+        0.591465544807553,
+        0.6106568107218961
+      ],
+      "delta_fixed": -0.1444,
+      "delta_ci95": [
+        -0.1572790934948852,
+        -0.1315209065051148
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 2.202,
+      "mean_turns": 8.7503
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7543,
+      "reach_rate": 0.7543,
+      "ci95": [
+        0.7457657306055,
+        0.7626389678231739
+      ],
+      "delta_fixed": 0.0088,
+      "delta_ci95": [
+        0.006969407032635439,
+        0.010630592967364563
+      ],
+      "mean_moves": 0.0508,
+      "mean_decoys": 1.7424,
+      "mean_turns": 6.9299
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7655,
+      "reach_rate": 0.7655,
+      "ci95": [
+        0.7570949257885037,
+        0.7737011710766669
+      ],
+      "delta_fixed": 0.02,
+      "delta_ci95": [
+        0.01725591321387434,
+        0.02274408678612566
+      ],
+      "mean_moves": 0.1309,
+      "mean_decoys": 1.7306,
+      "mean_turns": 6.8917
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "random",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9622,
+      "reach_rate": 0.9622,
+      "ci95": [
+        0.958281130278416,
+        0.9657639016277306
+      ],
+      "delta_fixed": 0.2167,
+      "delta_ci95": [
+        0.20772768676587633,
+        0.22567231323412368
+      ],
+      "mean_moves": 1.9177,
+      "mean_decoys": 1.3472,
+      "mean_turns": 5.3543
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9977,
+      "reach_rate": 0.9977,
+      "ci95": [
+        0.9965509225177114,
+        0.9984668455041172
+      ],
+      "delta_fixed": 0.2457,
+      "delta_ci95": [
+        0.23723463068198095,
+        0.2541653693180191
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 3.6956
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7520,
+      "reach_rate": 0.752,
+      "ci95": [
+        0.7434401641665032,
+        0.7603663006546759
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.7894,
+      "mean_turns": 6.4588
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9740,
+      "reach_rate": 0.974,
+      "ci95": [
+        0.9706942843573859,
+        0.9769416851872125
+      ],
+      "delta_fixed": 0.222,
+      "delta_ci95": [
+        0.2138541559280167,
+        0.2301458440719833
+      ],
+      "mean_moves": 1.582,
+      "mean_decoys": 0.7917,
+      "mean_turns": 3.7347
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 6063,
+      "reach_rate": 0.6063,
+      "ci95": [
+        0.5966851433550889,
+        0.615833218591305
+      ],
+      "delta_fixed": -0.1457,
+      "delta_ci95": [
+        -0.1586315304816056,
+        -0.13276846951839438
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.9249,
+      "mean_turns": 8.3166
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7790,
+      "reach_rate": 0.779,
+      "ci95": [
+        0.7707614283254338,
+        0.7870243005837287
+      ],
+      "delta_fixed": 0.027,
+      "delta_ci95": [
+        0.023823066610956192,
+        0.030176933389043807
+      ],
+      "mean_moves": 0.2969,
+      "mean_decoys": 0.873,
+      "mean_turns": 6.2909
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7811,
+      "reach_rate": 0.7811,
+      "ci95": [
+        0.772888431447862,
+        0.7890956846681435
+      ],
+      "delta_fixed": 0.0291,
+      "delta_ci95": [
+        0.025805393492838877,
+        0.032394606507161125
+      ],
+      "mean_moves": 0.4723,
+      "mean_decoys": 0.9261,
+      "mean_turns": 6.3001
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "learning",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7692,
+      "reach_rate": 0.7692,
+      "ci95": [
+        0.7608393618181926,
+        0.7773538934590352
+      ],
+      "delta_fixed": 0.0172,
+      "delta_ci95": [
+        0.009500569126632986,
+        0.024899430873367014
+      ],
+      "mean_moves": 5.0325,
+      "mean_decoys": 4.1754,
+      "mean_turns": 7.2573
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2471,
+      "delta_ci95": [
+        0.238645755023779,
+        0.255554244976221
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 2.5054
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7529,
+      "reach_rate": 0.7529,
+      "ci95": [
+        0.7443501299594453,
+        0.7612556436646665
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7413,
+      "mean_turns": 6.2119
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2471,
+      "delta_ci95": [
+        0.238645755023779,
+        0.255554244976221
+      ],
+      "mean_moves": 1.4938,
+      "mean_decoys": 1.0,
+      "mean_turns": 3.4938
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 6067,
+      "reach_rate": 0.6067,
+      "ci95": [
+        0.5970866978655781,
+        0.6162313568821195
+      ],
+      "delta_fixed": -0.1462,
+      "delta_ci95": [
+        -0.15913381862360018,
+        -0.1332661813763998
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.8739,
+      "mean_turns": 7.7997
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7529,
+      "reach_rate": 0.7529,
+      "ci95": [
+        0.7443501299594453,
+        0.7612556436646665
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7413,
+      "mean_turns": 6.2119
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7529,
+      "reach_rate": 0.7529,
+      "ci95": [
+        0.7443501299594453,
+        0.7612556436646665
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 1.7413,
+      "mean_turns": 6.2119
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "sweep",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7529,
+      "reach_rate": 0.7529,
+      "ci95": [
+        0.7443501299594453,
+        0.7612556436646665
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 12.84,
+      "mean_decoys": 13.0,
+      "mean_turns": 15.2467
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "none",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2471,
+      "delta_ci95": [
+        0.238645755023779,
+        0.255554244976221
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 0.0,
+      "mean_turns": 6.9944
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "fixed",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7529,
+      "reach_rate": 0.7529,
+      "ci95": [
+        0.7443501299594453,
+        0.7612556436646665
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 2.4932,
+      "mean_turns": 9.2201
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "adaptive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 9380,
+      "reach_rate": 0.938,
+      "ci95": [
+        0.933103162231417,
+        0.9425604551958702
+      ],
+      "delta_fixed": 0.1851,
+      "delta_ci95": [
+        0.17748753734479472,
+        0.19271246265520525
+      ],
+      "mean_moves": 1.4966,
+      "mean_decoys": 3.619,
+      "mean_turns": 7.9244
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "risk",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 6067,
+      "reach_rate": 0.6067,
+      "ci95": [
+        0.5970866978655781,
+        0.6162313568821195
+      ],
+      "delta_fixed": -0.1462,
+      "delta_ci95": [
+        -0.15913381862360018,
+        -0.1332661813763998
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 2.7804,
+      "mean_turns": 10.5351
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "guard",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 7529,
+      "reach_rate": 0.7529,
+      "ci95": [
+        0.7443501299594453,
+        0.7612556436646665
+      ],
+      "delta_fixed": 0.0,
+      "delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_moves": 0.0,
+      "mean_decoys": 2.4932,
+      "mean_turns": 9.2201
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "cautious",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 8768,
+      "reach_rate": 0.8768,
+      "ci95": [
+        0.870213173494584,
+        0.8830974453332742
+      ],
+      "delta_fixed": 0.1239,
+      "delta_ci95": [
+        0.11744223405842136,
+        0.13035776594157863
+      ],
+      "mean_moves": 1.1179,
+      "mean_decoys": 1.9356,
+      "mean_turns": 8.5976
+    },
+    {
+      "condition": "linked_importance",
+      "config": {
+        "bias": "uniform",
+        "linked": true,
+        "budget": 16,
+        "hint": 0.24,
+        "learning_rate": 0.48,
+        "epsilon": 0.16,
+        "switch_delay": 0
+      },
+      "agent": "persistent",
+      "policy": "predictive",
+      "n": 10000,
+      "seed_start": 91000000,
+      "reached": 10000,
+      "reach_rate": 1.0,
+      "ci95": [
+        0.9996160016293234,
+        1.0
+      ],
+      "delta_fixed": 0.2471,
+      "delta_ci95": [
+        0.238645755023779,
+        0.255554244976221
+      ],
+      "mean_moves": 2.1584,
+      "mean_decoys": 1.5085,
+      "mean_turns": 7.4584
+    }
+  ]
+}

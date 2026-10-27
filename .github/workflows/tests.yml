@@ -1,0 +1,22 @@
+name: Offline research tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m unittest discover -s tests -v
+      - run: python -m tests.parity_fixtures > /tmp/mirage-parity.json
+      - run: node tests/legacy_parity.js
+      - run: python -m tests.fair_fixtures > /tmp/mirage-fair.json
+      - run: node tests/browser_smoke.js
+      - run: node tests/research_dashboard.js
+      - run: node tests/research_dashboard.js sensor-audit.html experiments/results_sensor/audit.json
